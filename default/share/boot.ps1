@@ -1,3 +1,5 @@
+Start-Transcript "C:\share\boot.log" -Append
+
 # 日本語化
 Set-WinUserLanguageList -Force ja-JP 
 Set-WinSystemLocale -SystemLocale ja-JP
@@ -26,6 +28,8 @@ winget install -e --id 7zip.7zip --accept-source-agreements --accept-package-agr
 winget install --id Google.Chrome --force --accept-source-agreements --accept-package-agreements
 
 # 任意のアプリをインストール ここまで
+
+Stop-Transcript
 
 # システムを再起動
 Restart-Computer                          
