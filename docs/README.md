@@ -25,6 +25,7 @@
     この操作を行うことで、Cドライブ直下にshareフォルダが作成され、boot.ps1がコピーされます。
 
     ```PowerShell
+    PS> cd .\default\
     PS> .\setup.ps1
     ```
 
@@ -33,5 +34,12 @@
     以下のコマンドを実行することでWindows サンドボックス環境が起動します。
 
     ```PowerShell
+    PS> cd .\default\
     PS> .\default.wsb
     ```
+
+5. トラブルシューティング
+
+    1. 「boot.ps1」がうまく動作しない場合ことがある
+    
+        「boot.ps1」の改行コードが「LF」ですと、うまく動作しない場合があります。その際には「CRLF」に変更してください。
