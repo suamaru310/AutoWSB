@@ -3,7 +3,7 @@
     <MappedFolder>
       <HostFolder>C:\Share</HostFolder>
       <SandboxFolder>C:\share</SandboxFolder>
-      <ReadOnly>true</ReadOnly>
+      <ReadOnly>false</ReadOnly>
     </MappedFolder>
   </MappedFolders>
   <LogonCommand>
